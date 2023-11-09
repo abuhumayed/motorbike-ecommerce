@@ -122,13 +122,15 @@ nav {
 
 .slider {
   background: url('./img/bwallbg.jpeg');
-  /* clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 94%); */
+  clip-path: polygon(86% 0, 100% 50%, 86% 100%, 0% 100%, 11% 50%, 0% 0%);
   height: 67vh;
+  overflow: hidden;
 }
 
 .sliderWrapper {
   display: flex;
   width: 500vw;
+  transition: all 1s ease-in-out;
 }
 .sliderItem {
   width: 100vw;
@@ -225,4 +227,34 @@ nav {
 }
 .sliderItem:nth-child(5) .sliderPrice {
   color: rgb(124, 115, 80);
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  gap: 3rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureIcon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.featuredDesc {
+  color: grey;
+  width: 50%;
+  height: 100px;
 }
